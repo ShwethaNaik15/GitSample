@@ -1,0 +1,16 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Test1                                                                  
+==============================================================================
+Login To The Internet HerokuApp                                       The Internet
+https://the-internet.herokuapp.com/secure
+| PASS |
+------------------------------------------------------------------------------
+Suites.Test1                                                          | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\IKX1KOR\RobotFramework_Training\SampleProject\parallelExecution\pabot_results\0\output.xml

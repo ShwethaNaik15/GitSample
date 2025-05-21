@@ -1,0 +1,104 @@
+{"level":30,"time":"2025-05-19T05:49:05.783Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Listening on 51022"}
+(node:1720) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-05-19T05:49:05.973Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-05-19T05:49:05.974Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":1080,\"width\":1420}}"}
+{"level":30,"time":"2025-05-19T05:49:05.974Z","pid":1720,"hostname":"KOR-C-009DT","msg":"currentBrowser: undefined"}
+{"level":30,"time":"2025-05-19T05:49:06.748Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Trace file: "}
+{"level":30,"time":"2025-05-19T05:49:06.762Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Changed active context"}
+{"level":30,"time":"2025-05-19T05:49:06.762Z","pid":1720,"hostname":"KOR-C-009DT","msg":"End of node method newContext"}
+{"level":30,"time":"2025-05-19T05:49:06.770Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-05-19T05:49:07.455Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Adding browser to stack: chromium, version: 133.0.6943.16"}
+{"level":30,"time":"2025-05-19T05:49:07.456Z","pid":1720,"hostname":"KOR-C-009DT","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-05-19T05:49:07.455Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-05-19T05:49:07.466Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-05-19T05:49:07.467Z","pid":1720,"hostname":"KOR-C-009DT","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-05-19T05:49:07.499Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Changed active context"}
+{"level":30,"time":"2025-05-19T05:49:08.530Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Video path: undefined"}
+{"level":30,"time":"2025-05-19T05:49:08.531Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Changed active page"}
+{"level":30,"time":"2025-05-19T05:49:10.392Z","pid":1720,"hostname":"KOR-C-009DT","msg":"End of node method newPage"}
+{"level":30,"time":"2025-05-19T05:49:10.397Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-19T05:49:10.398Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Strict mode is enabled, find Locator with ul.nav.navbar-nav.pull-xs-right > li:nth-child(2) in page."}
+{"level":30,"time":"2025-05-19T05:49:10.643Z","pid":1720,"hostname":"KOR-C-009DT","msg":"End of node method click"}
+{"level":30,"time":"2025-05-19T05:49:10.648Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-05-19T05:49:10.649Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Strict mode is enabled, find Locator with input[name='email'] in page."}
+{"level":30,"time":"2025-05-19T05:49:10.878Z","pid":1720,"hostname":"KOR-C-009DT","msg":"End of node method typeText"}
+{"level":30,"time":"2025-05-19T05:49:10.883Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-05-19T05:49:10.883Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Strict mode is enabled, find Locator with input[name='password'] in page."}
+{"level":30,"time":"2025-05-19T05:49:10.957Z","pid":1720,"hostname":"KOR-C-009DT","msg":"End of node method typeText"}
+{"level":30,"time":"2025-05-19T05:49:10.963Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-19T05:49:10.963Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Strict mode is enabled, find Locator with button.btn.btn-lg.btn-primary.pull-xs-right in page."}
+{"level":30,"time":"2025-05-19T05:49:11.022Z","pid":1720,"hostname":"KOR-C-009DT","msg":"End of node method click"}
+{"level":30,"time":"2025-05-19T05:49:11.027Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Start of node method getText"}
+{"level":30,"time":"2025-05-19T05:49:11.028Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Strict mode is enabled, find Locator with div h6 in page."}
+{"level":30,"time":"2025-05-19T05:49:21.030Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Error of node method  getText"}
+================= Original suppressed error =================
+{"level":50,"time":"2025-05-19T05:49:21.029Z","pid":1720,"hostname":"KOR-C-009DT","err":{"type":"TimeoutError","message":"locator.elementHandle: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div h6')\u001b[22m\n","stack":"locator.elementHandle: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div h6')\u001b[22m\n\n    at getTextContent (C:\\Users\\IKX1KOR\\AppData\\Roaming\\Python\\Python311\\site-packages\\Browser\\wrapper\\index.js:11577:33)\n    at getText (C:\\Users\\IKX1KOR\\AppData\\Roaming\\Python\\Python311\\site-packages\\Browser\\wrapper\\index.js:11591:21)\n    at async PlaywrightServer.getText (C:\\Users\\IKX1KOR\\AppData\\Roaming\\Python\\Python311\\site-packages\\Browser\\wrapper\\index.js:13132:28)","name":"TimeoutError"},"msg":"locator.elementHandle: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('div h6')\u001b[22m\n"}
+locator.elementHandle: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('div h6')[22m
+
+    at getTextContent (C:\Users\IKX1KOR\AppData\Roaming\Python\Python311\site-packages\Browser\wrapper\index.js:11577:33)
+    at getText (C:\Users\IKX1KOR\AppData\Roaming\Python\Python311\site-packages\Browser\wrapper\index.js:11591:21)
+    at async PlaywrightServer.getText (C:\Users\IKX1KOR\AppData\Roaming\Python\Python311\site-packages\Browser\wrapper\index.js:13132:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-05-19T05:49:21.076Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-05-19T05:49:21.077Z","pid":1720,"hostname":"KOR-C-009DT","Take screenshot with options: ":{"path":"C:\\Users\\IKX1KOR\\RobotFramework_Training\\SampleProject\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-05-19T05:49:31.086Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Error of node method  takeScreenshot"}
+================= Original suppressed error =================
+page.screenshot: Timeout 10000ms exceeded.
+Call log:
+[2m  - taking page screenshot[22m
+[2m  - waiting for fonts to load...[22m
+[2m  - fonts loaded[22m
+
+    at takeScreenshot (C:\Users\IKX1KOR\AppData\Roaming\Python\Python311\site-packages\Browser\wrapper\index.js:10783:16)
+    at PlaywrightServer.takeScreenshot (C:\Users\IKX1KOR\AppData\Roaming\Python\Python311\site-packages\Browser\wrapper\index.js:13132:34)
+    at Object.onReceiveHalfClose (C:\Users\IKX1KOR\AppData\Roaming\Python\Python311\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\IKX1KOR\AppData\Roaming\Python\Python311\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\IKX1KOR\AppData\Roaming\Python\Python311\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\IKX1KOR\AppData\Roaming\Python\Python311\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-05-19T05:49:31.127Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:49:31.163Z","pid":1720,"hostname":"KOR-C-009DT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:49:31.175Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:49:31.178Z","pid":1720,"hostname":"KOR-C-009DT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:49:31.179Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:49:31.182Z","pid":1720,"hostname":"KOR-C-009DT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:49:31.184Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-05-19T05:49:31.184Z","pid":1720,"hostname":"KOR-C-009DT","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-05-19T05:49:31.186Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:49:31.188Z","pid":1720,"hostname":"KOR-C-009DT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:49:31.191Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Changed active context"}
+{"level":30,"time":"2025-05-19T05:49:31.192Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-05-19T05:49:31.196Z","pid":1720,"hostname":"KOR-C-009DT","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-05-19T05:49:31.198Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:49:31.200Z","pid":1720,"hostname":"KOR-C-009DT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:49:31.201Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-05-19T05:49:31.202Z","pid":1720,"hostname":"KOR-C-009DT","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-05-19T05:49:31.204Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:49:31.249Z","pid":1720,"hostname":"KOR-C-009DT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:49:31.251Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:49:31.255Z","pid":1720,"hostname":"KOR-C-009DT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:49:31.257Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-05-19T05:49:31.257Z","pid":1720,"hostname":"KOR-C-009DT","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-05-19T05:49:31.260Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:49:31.262Z","pid":1720,"hostname":"KOR-C-009DT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:49:31.264Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-05-19T05:49:31.264Z","pid":1720,"hostname":"KOR-C-009DT","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-05-19T05:49:31.267Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:49:31.269Z","pid":1720,"hostname":"KOR-C-009DT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:49:31.271Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Changed active context"}
+{"level":30,"time":"2025-05-19T05:49:31.271Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Changing current active page: page=63d7326c-32ff-4db6-a995-3fb58307ef8b"}
+{"level":30,"time":"2025-05-19T05:49:31.271Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Changed active page"}
+{"level":30,"time":"2025-05-19T05:49:31.273Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-05-19T05:49:31.291Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Removed page=bfaf2507-fc34-44ca-9208-0e5bab0bf176 from context=21b94719-a474-446e-baf0-c5dfdfe41de1 page stack"}
+{"level":30,"time":"2025-05-19T05:49:31.338Z","pid":1720,"hostname":"KOR-C-009DT","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-05-19T05:49:31.345Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:49:31.345Z","pid":1720,"hostname":"KOR-C-009DT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:49:31.434Z","pid":1720,"hostname":"KOR-C-009DT","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-05-19T05:49:31.847Z","pid":1720,"hostname":"KOR-C-009DT","msg":"End of node method closeAllBrowsers"}
