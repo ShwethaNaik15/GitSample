@@ -18,3 +18,13 @@ Login to conduit application
     Fill Text    ${PasswordInputField}    ${Password}
     Click        ${LoginButton}
     Get Text    ${UserProfile}    contains    ${UserName}
+    ${stateFile}=    Save Storage State
+    Close Context
+    Set Suite Variable    ${stateFile}    ${stateFile}
+
+Launch browser with state
+    [Arguments]    ${stateFile}
+    New Browser    chromium    headless=false
+    ${context}=    Create Dictionary    storageState=${stateFile}
+    New Context    &{context}
+    New Page    ${URL}
