@@ -14,15 +14,15 @@ Login into App
     Login to conduit application
 
 View Article
-    Login to conduit application
+    Launch Browser With State    ${stateFile}
     View newly created article    ${ArticleTitle1}
     View newly created article    ${ArticleTitle2}
     View newly created article    ${ArticleTitle3}
 
 Update an Article
-    Login to conduit application
+    Launch Browser With State    ${stateFile}
     Update an article    ${ArticleTitle1}    ${UpdatedContent}
 
 Delete an Article
-    Login to conduit application
-    Delete an article    ${ArticleTitle1}
+    Launch Browser With State    ${stateFile}
+    Delete an article    ${ArticleTitle2}
