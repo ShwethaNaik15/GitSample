@@ -1,0 +1,17 @@
+LoginLink = "[href=\"#/login\"]"
+EmailInputField = "[name=\"email\"]"
+PasswordInputField = "[name=\"password\"]"
+LoginButton = "[class*=\"btn btn-lg btn-primary\"]"
+UserProfile = "[class=\"nav-link dropdown-toggle cursor-pointer\"]"
+NewArticleLink = "[href=\"#/editor\"]"
+ArticleTitleInputField = "[name=\"title\"]"
+DescriptionInputField = "input[name=\"description\"]"
+ArticalContentTextArea = "[name=\"body\"]"
+TagsInputField = "[name=\"tags\"]"
+SubmitArticle = "[type=\"submit\"]"
+HomePage = "[class=\"home-page\"]"
+GlobalFeedLink = "//button[normalize-space(.)='Global Feed']"
+ArticlePage = "[class=\"article-page\"]"
+HomeLink = "//a[( @class='nav-link ' or @class='nav-link active') and contains(., 'Home')]"
+EditArticleButton = '(//button[a[contains(text(), \'Edit Article\')]])[1]'
+DeleteArticleButton = '(//button[contains(text(), \'Delete Article\')])[1]'
