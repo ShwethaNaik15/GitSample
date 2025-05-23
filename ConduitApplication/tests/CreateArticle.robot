@@ -1,9 +1,9 @@
 *** Settings ***
 Library           Browser
-Resource          ../resources/LoginPage.robot
-Resource          ../resources/ArticlePage.robot
+Resource          ../resources/LoginPage.resource
+Resource          ../resources/ArticlePage.resource
 Library           DataDriver    file=../resources/data/CreateArticle.csv
-
+Suite Setup    Login to conduit application
 Test Template     Create an Article
 
 *** Variables ***
@@ -18,12 +18,8 @@ Create new Article    ${title}    ${description}    ${content}    ${tags}
 *** Keywords ***
 Create an Article
     [Arguments]    ${title}    ${description}    ${content}    ${tags}
-    Login to conduit application
     Launch browser with state    ${stateFile}
-    Click          ${NewArticleLink}
-    Fill Text      ${ArticleTitleInputField}     ${title}
-    Fill Text      ${DescriptionInputField}      ${description}
-    Fill Text      ${ArticalContentTextArea}     ${content}
-    Fill Text      ${TagsInputField}             ${tags}
-    Click    ${SubmitArticle}
-    Get Text    ${ArticlePage}    contains    ${title}
+    Navigate to new article page
+    Enter article details    ${title}    ${description}    ${content}    ${tags}
+    Sumbit an article
+    Verify an article with title    ${title}

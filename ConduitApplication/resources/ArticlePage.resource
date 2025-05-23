@@ -1,7 +1,24 @@
 *** Settings ***
 Library    Browser
+Variables       ../locators.py
 
 *** Keywords ***
+Navigate to new article page
+    Click          ${NewArticleLink}
+Enter article details
+    [Arguments]    ${title}    ${description}    ${content}    ${tags}
+    Fill Text      ${ArticleTitleInputField}     ${title}
+    Fill Text      ${DescriptionInputField}      ${description}
+    Fill Text      ${ArticalContentTextArea}     ${content}
+    Fill Text      ${TagsInputField}             ${tags}
+
+Sumbit an article
+    Click    ${SubmitArticle}
+
+Verify an article with title
+    [Arguments]    ${title}
+    Get Text    ${ArticlePage}    contains    ${title}
+
 View newly created article
     [Documentation]    Opens an article and verifies its title is displayed
     [Arguments]    ${ArticleTitle}

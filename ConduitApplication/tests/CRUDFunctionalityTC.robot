@@ -1,7 +1,7 @@
 *** Settings ***
 Library           Browser
-Resource          ../resources/LoginPage.robot
-Resource          ../resources/ArticlePage.robot
+Resource          ../resources/LoginPage.resource
+Resource          ../resources/ArticlePage.resource
 
 *** Variables ***
 ${ArticleTitle1}    RF Test Article 1
