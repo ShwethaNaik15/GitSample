@@ -23,8 +23,12 @@ Delete an article
     [Arguments]    ${ArticleTitle}
     Open Article From Global Feed    ${ArticleTitle}
     Sleep    5
+    ${promise}=    Promise To    Wait For Alert    action=accept
     Click    ${DeleteArticleButton}
-    ${text}=    Get Text    ${ArticlePage}
+    Wait For    ${promise}
+    Sleep    2
+    Click    ${GlobalFeedLink}
+    ${text}=    Get Text    ${HomePage}
     Should Not Contain    ${text}    ${ArticleTitle}
 
 Open article from Global Feed
