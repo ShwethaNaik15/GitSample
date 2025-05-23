@@ -10,6 +10,7 @@ ${Password}    rftestuser
 
 *** Keywords ***
 Login to conduit application
+    [Documentation]    Launches browser, logs into Conduit app, saves session state for reuse
     New Browser    chromium    headless=false
     New Context    viewport={'width': 1420, 'height': 1080}
     New Page    ${URL}
@@ -23,6 +24,7 @@ Login to conduit application
     Set Suite Variable    ${stateFile}    ${stateFile}
 
 Launch browser with state
+    [Documentation]    Launches browser with previously saved storage state to continue session
     [Arguments]    ${stateFile}
     New Browser    chromium    headless=false
     ${context}=    Create Dictionary    storageState=${stateFile}

@@ -3,11 +3,13 @@ Library    Browser
 
 *** Keywords ***
 View newly created article
+    [Documentation]    Opens an article and verifies its title is displayed
     [Arguments]    ${ArticleTitle}
     Open Article From Global Feed    ${ArticleTitle}
     Get Text    ${ArticlePage}    contains    ${ArticleTitle}
 
 Update an article
+    [Documentation]    Updates article content and verifies the changes are saved
     [Arguments]    ${ArticleTitle}    ${UpdatedContent}
     Open Article From Global Feed    ${ArticleTitle}
     Click    ${EditArticleButton}
@@ -17,6 +19,7 @@ Update an article
     Get Text    ${ArticlePage}    contains    ${UpdatedContent}
 
 Delete an article
+    [Documentation]    Deletes an article and confirms it no longer appears
     [Arguments]    ${ArticleTitle}
     Open Article From Global Feed    ${ArticleTitle}
     Sleep    5
@@ -25,6 +28,7 @@ Delete an article
     Should Not Contain    ${text}    ${ArticleTitle}
 
 Open article from Global Feed
+    [Documentation]    Navigates to Global Feed and opens the specified article
     [Arguments]    ${ArticleTitle}
     Click    ${HomeLink}
     Click    ${GlobalFeedLink}

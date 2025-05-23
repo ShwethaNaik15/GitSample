@@ -2,7 +2,7 @@
 Library           Browser
 Resource          ../resources/LoginPage.robot
 Resource          ../resources/ArticlePage.robot
-Library           DataDriver
+Library           DataDriver    file=../resources/data/CreateArticle.csv
 
 Test Template     Create an Article
 
@@ -18,8 +18,8 @@ Create new Article    ${title}    ${description}    ${content}    ${tags}
 *** Keywords ***
 Create an Article
     [Arguments]    ${title}    ${description}    ${content}    ${tags}
-    Log    Title: ${title}
     Login to conduit application
+    Launch browser with state    ${stateFile}
     Click          ${NewArticleLink}
     Fill Text      ${ArticleTitleInputField}     ${title}
     Fill Text      ${DescriptionInputField}      ${description}
